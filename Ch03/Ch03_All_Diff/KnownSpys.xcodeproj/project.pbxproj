@@ -27,6 +27,10 @@
 		0993B3B61EA55130005C9B6F /* SpyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993B3B41EA55130005C9B6F /* SpyCell.xib */; };
 		09BE71B51EA9280C001F6D6B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE71B41EA9280C001F6D6B /* Extensions.swift */; };
 		27D89A5AED51AACE163BC800 /* Pods_KnownSpys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD66DF8A273EBAA681C0C56 /* Pods_KnownSpys.framework */; };
+		7E1E04341EBD15A000BBBF68 /* SpyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E04331EBD15A000BBBF68 /* SpyListPresenter.swift */; };
+		7E8F914F1EBD1E0600AB3339 /* SecretDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F914E1EBD1E0600AB3339 /* SecretDetailsPresenter.swift */; };
+		7E8F91511EBD1EEB00AB3339 /* SpyCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F91501EBD1EEB00AB3339 /* SpyCellPresenter.swift */; };
+		7EE377BD1EBD1BC100BE5B97 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE377BC1EBD1BC100BE5B97 /* DetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		0993B3B41EA55130005C9B6F /* SpyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpyCell.xib; sourceTree = "<group>"; };
 		09BE71B41EA9280C001F6D6B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6FD66DF8A273EBAA681C0C56 /* Pods_KnownSpys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnownSpys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1E04331EBD15A000BBBF68 /* SpyListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyListPresenter.swift; sourceTree = "<group>"; };
+		7E8F914E1EBD1E0600AB3339 /* SecretDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretDetailsPresenter.swift; sourceTree = "<group>"; };
+		7E8F91501EBD1EEB00AB3339 /* SpyCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyCellPresenter.swift; sourceTree = "<group>"; };
+		7EE377BC1EBD1BC100BE5B97 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		93008DB5112BB6ECABC1A530 /* Pods-KnownSpys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnownSpys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnownSpys/Pods-KnownSpys.debug.xcconfig"; sourceTree = "<group>"; };
 		C195FFDF15DCC517723B1A3C /* Pods-KnownSpys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnownSpys.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnownSpys/Pods-KnownSpys.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				0993B3A71EA53D5A005C9B6F /* SpyListViewController.swift */,
+				7E1E04331EBD15A000BBBF68 /* SpyListPresenter.swift */,
 			);
 			name = SpyList;
 			sourceTree = "<group>";
@@ -196,6 +205,7 @@
 			children = (
 				0993B3B31EA55130005C9B6F /* SpyCell.swift */,
 				0993B3B41EA55130005C9B6F /* SpyCell.xib */,
+				7E8F91501EBD1EEB00AB3339 /* SpyCellPresenter.swift */,
 			);
 			name = SpyCell;
 			sourceTree = "<group>";
@@ -205,6 +215,7 @@
 			children = (
 				0993B3A01EA53D3D005C9B6F /* SecretDetailsViewController.swift */,
 				09837D8E1EA6643B00F2EE12 /* SecretDetailsViewController.xib */,
+				7E8F914E1EBD1E0600AB3339 /* SecretDetailsPresenter.swift */,
 			);
 			name = SecretDetails;
 			sourceTree = "<group>";
@@ -213,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				0993B3A61EA53D5A005C9B6F /* DetailViewController.swift */,
+				7EE377BC1EBD1BC100BE5B97 /* DetailPresenter.swift */,
 			);
 			name = Details;
 			sourceTree = "<group>";
@@ -369,9 +381,13 @@
 				0993B3B01EA53DB6005C9B6F /* RowType.swift in Sources */,
 				0993B3AA1EA53D5A005C9B6F /* SpyListViewController.swift in Sources */,
 				093C826A1EA7E617009CBC73 /* MockedWebServer.swift in Sources */,
+				7EE377BD1EBD1BC100BE5B97 /* DetailPresenter.swift in Sources */,
 				0993B3B51EA55130005C9B6F /* SpyCell.swift in Sources */,
 				0993B3A21EA53D3D005C9B6F /* SecretDetailsViewController.swift in Sources */,
+				7E8F91511EBD1EEB00AB3339 /* SpyCellPresenter.swift in Sources */,
+				7E8F914F1EBD1E0600AB3339 /* SecretDetailsPresenter.swift in Sources */,
 				09BE71B51EA9280C001F6D6B /* Extensions.swift in Sources */,
+				7E1E04341EBD15A000BBBF68 /* SpyListPresenter.swift in Sources */,
 				0993B3831EA53470005C9B6F /* AppDelegate.swift in Sources */,
 				0935DCFA1EA81BDD00349652 /* Enums.swift in Sources */,
 			);
