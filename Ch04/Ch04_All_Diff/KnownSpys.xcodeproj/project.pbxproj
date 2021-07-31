@@ -28,6 +28,11 @@
 		09BE71B51EA9280C001F6D6B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE71B41EA9280C001F6D6B /* Extensions.swift */; };
 		27D89A5AED51AACE163BC800 /* Pods_KnownSpys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD66DF8A273EBAA681C0C56 /* Pods_KnownSpys.framework */; };
 		7E1E04341EBD15A000BBBF68 /* SpyListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1E04331EBD15A000BBBF68 /* SpyListPresenter.swift */; };
+		7E45B8AE1EBD2264006E7A6E /* TranslationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45B8AD1EBD2264006E7A6E /* TranslationLayer.swift */; };
+		7E45B8B01EBD2277006E7A6E /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45B8AF1EBD2277006E7A6E /* DataLayer.swift */; };
+		7E45B8B21EBD2286006E7A6E /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45B8B11EBD2286006E7A6E /* NetworkLayer.swift */; };
+		7E45B8B41EBD22B7006E7A6E /* ModelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45B8B31EBD22B7006E7A6E /* ModelLayer.swift */; };
+		7E45B8B61EBD2572006E7A6E /* SpyTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E45B8B51EBD2572006E7A6E /* SpyTranslator.swift */; };
 		7E8F914F1EBD1E0600AB3339 /* SecretDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F914E1EBD1E0600AB3339 /* SecretDetailsPresenter.swift */; };
 		7E8F91511EBD1EEB00AB3339 /* SpyCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F91501EBD1EEB00AB3339 /* SpyCellPresenter.swift */; };
 		7EE377BD1EBD1BC100BE5B97 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE377BC1EBD1BC100BE5B97 /* DetailPresenter.swift */; };
@@ -57,6 +62,11 @@
 		09BE71B41EA9280C001F6D6B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6FD66DF8A273EBAA681C0C56 /* Pods_KnownSpys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnownSpys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E1E04331EBD15A000BBBF68 /* SpyListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyListPresenter.swift; sourceTree = "<group>"; };
+		7E45B8AD1EBD2264006E7A6E /* TranslationLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationLayer.swift; sourceTree = "<group>"; };
+		7E45B8AF1EBD2277006E7A6E /* DataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
+		7E45B8B11EBD2286006E7A6E /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		7E45B8B31EBD22B7006E7A6E /* ModelLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelLayer.swift; sourceTree = "<group>"; };
+		7E45B8B51EBD2572006E7A6E /* SpyTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyTranslator.swift; sourceTree = "<group>"; };
 		7E8F914E1EBD1E0600AB3339 /* SecretDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretDetailsPresenter.swift; sourceTree = "<group>"; };
 		7E8F91501EBD1EEB00AB3339 /* SpyCellPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyCellPresenter.swift; sourceTree = "<group>"; };
 		7EE377BC1EBD1BC100BE5B97 /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
@@ -99,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				094CE19E1EA7FB590056B653 /* MockedWebServer */,
+				7E45B8B11EBD2286006E7A6E /* NetworkLayer.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -107,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				094CE19D1EA7FB4C0056B653 /* CoreData */,
+				7E45B8AF1EBD2277006E7A6E /* DataLayer.swift */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -183,10 +195,12 @@
 		0993B3B21EA53F6A005C9B6F /* ModelLayer */ = {
 			isa = PBXGroup;
 			children = (
+				7E45B8AC1EBD2251006E7A6E /* Translation */,
 				0935DCF91EA81BDD00349652 /* Enums.swift */,
 				09837DB31EA6952900F2EE12 /* DTOs */,
 				09837DB21EA6951A00F2EE12 /* Database */,
 				09837DB11EA6951500F2EE12 /* Network */,
+				7E45B8B31EBD22B7006E7A6E /* ModelLayer.swift */,
 			);
 			name = ModelLayer;
 			sourceTree = "<group>";
@@ -227,6 +241,15 @@
 				7EE377BC1EBD1BC100BE5B97 /* DetailPresenter.swift */,
 			);
 			name = Details;
+			sourceTree = "<group>";
+		};
+		7E45B8AC1EBD2251006E7A6E /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				7E45B8AD1EBD2264006E7A6E /* TranslationLayer.swift */,
+				7E45B8B51EBD2572006E7A6E /* SpyTranslator.swift */,
+			);
+			name = Translation;
 			sourceTree = "<group>";
 		};
 		7F5EDADF8906101E9B116D2C /* Frameworks */ = {
@@ -381,9 +404,14 @@
 				0993B3B01EA53DB6005C9B6F /* RowType.swift in Sources */,
 				0993B3AA1EA53D5A005C9B6F /* SpyListViewController.swift in Sources */,
 				093C826A1EA7E617009CBC73 /* MockedWebServer.swift in Sources */,
+				7E45B8B21EBD2286006E7A6E /* NetworkLayer.swift in Sources */,
 				7EE377BD1EBD1BC100BE5B97 /* DetailPresenter.swift in Sources */,
+				7E45B8B61EBD2572006E7A6E /* SpyTranslator.swift in Sources */,
+				7E45B8B41EBD22B7006E7A6E /* ModelLayer.swift in Sources */,
 				0993B3B51EA55130005C9B6F /* SpyCell.swift in Sources */,
 				0993B3A21EA53D3D005C9B6F /* SecretDetailsViewController.swift in Sources */,
+				7E45B8B01EBD2277006E7A6E /* DataLayer.swift in Sources */,
+				7E45B8AE1EBD2264006E7A6E /* TranslationLayer.swift in Sources */,
 				7E8F91511EBD1EEB00AB3339 /* SpyCellPresenter.swift in Sources */,
 				7E8F914F1EBD1E0600AB3339 /* SecretDetailsPresenter.swift in Sources */,
 				09BE71B51EA9280C001F6D6B /* Extensions.swift in Sources */,
